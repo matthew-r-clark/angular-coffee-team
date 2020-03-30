@@ -12,6 +12,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
+  { path: 'about', component: AboutPageComponent },
+  { path: 'charts', component: ChartsPageComponent },
+  { path: 'community', component: CommunityPageComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
