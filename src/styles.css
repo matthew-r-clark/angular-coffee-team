@@ -57,3 +57,38 @@ table {
   font-size: 20px;
   font-family: "Yantramanav", sans-serif;
 }
+
+body {
+  background-color: #fff;
+  text-align: center;
+  color: #0c71b9;
+}
+
+h1 {
+  font-size: 75px;
+  margin-bottom: 25px;
+  text-transform: lowercase;
+}
+
+button, .btn-primary {
+  background-color: #0c71b9;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 10px;
+  border-style: hidden;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  transition-duration: 0.5s;
+}
+
+button:hover, .btn-primary:hover {
+  background-color: #149dff;
+}
+
+p {
+  padding: 25px;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
