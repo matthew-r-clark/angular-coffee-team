@@ -9,34 +9,3 @@
 #index-banner3 { /* ground beans */
   background-image: url("https://i.imgur.com/g4N5lIl.jpg");
 }
-
-.hero-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  color: #fff;
-  padding: 50px;
-}
-
-.hero-text h1, .hero-text p {
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-hr {
-  border-color: white;
-  border-width: 1px;
-  width: 80%;
-  margin: auto;
-}
-
-.hero-text h1, .hero-text p {
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.spacer {
-  height: 25px;
-}
