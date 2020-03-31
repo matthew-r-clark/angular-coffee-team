@@ -1,0 +1,7 @@
+#sidebar {
+  height: 10000000px;
+  background-color: #0c71b9;
+  width: 200px;
+  position: fixed;
+  z-index: -100000;
+}

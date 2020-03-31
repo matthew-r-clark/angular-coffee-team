@@ -37,16 +37,13 @@ button {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   transition-duration: 0.5s;
-}
-
-.btn-primary {
+  cursor: pointer;
   background-color: #0c71b9;
-  color: #fff;
+  color: white;
 }
 
 .btn-primary:hover {
   background-color: #149dff;
-  cursor: pointer;
 }
 
 .btn-secondary {
@@ -56,8 +53,8 @@ button {
 
 .btn-secondary:hover {
   background-color: #0c71b9;
+  border: 1px solid white;
   color: white;
-  cursor: pointer;
 }
 
 p {

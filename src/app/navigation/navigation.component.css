@@ -32,8 +32,6 @@ a {
 }
 
 .nav-button {
-  transition-duration: 0.5s;
-  border-radius: 5px;
   padding-left: 5px;
   padding-right: 5px;
   font-family: "Montserrat", sans-serif;
