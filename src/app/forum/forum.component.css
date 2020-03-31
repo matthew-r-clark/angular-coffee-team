@@ -1,0 +1,33 @@
+li {
+  border: 2px solid #0c71b9;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+h2 {
+  padding: 10px 0;
+}
+
+h3 {
+  font-size: 16px;
+  opacity: 0.75;
+  padding-bottom: 10px;
+}
+
+h2, h3 {
+  display: inline-block;
+}
+
+#line {
+  border-bottom: 2px solid #0c71b9;
+}
+
+h2, p {
+  margin: 0 25px;
+}
+
+p {
+  padding: 25px 0;
+}

@@ -9,6 +9,8 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ChartsPageComponent } from './charts-page/charts-page.component';
 import { CommunityPageComponent } from './community-page/community-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ForumTopicsComponent } from './forum-topics/forum-topics.component';
+import { ForumComponent } from './forum/forum.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -26,7 +28,9 @@ const appRoutes: Routes = [
     AboutPageComponent,
     ChartsPageComponent,
     CommunityPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ForumTopicsComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,

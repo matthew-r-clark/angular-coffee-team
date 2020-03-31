@@ -19,24 +19,45 @@ body {
 
 h1 {
   font-size: 75px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   text-transform: lowercase;
 }
 
-button, .btn-primary {
-  background-color: #0c71b9;
+h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+button {
   padding: 5px;
   border-radius: 10px;
-  color: #fff;
-  margin-top: 10px;
+  margin: 20px 0;
   border-style: hidden;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   transition-duration: 0.5s;
 }
 
-button:hover, .btn-primary:hover {
+.btn-primary {
+  background-color: #0c71b9;
+  color: #fff;
+}
+
+.btn-primary:hover {
   background-color: #149dff;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #0c71b9;
+}
+
+.btn-secondary:hover {
+  background-color: #0c71b9;
+  color: white;
+  cursor: pointer;
 }
 
 p {
@@ -44,6 +65,11 @@ p {
   width: 90%;
   margin: auto;
   text-align: left;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .hero-image {
