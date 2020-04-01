@@ -2,8 +2,24 @@ li {
   border: 2px solid #0c71b9;
   border-radius: 5px;
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
   text-align: left;
+}
+
+li.reply {
+  border: none;
+  border-radius: 0px;
+  border-left: 2px solid #0c71b9;
+  margin-left: 25px;
+}
+
+li.reply p {
+  padding: 0;
+  margin-left: 10px;
+}
+
+li.reply h3 {
+  margin-left: 10px;
 }
 
 h2 {

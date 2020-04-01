@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ForumService } from '../forum.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-forum',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forum.component.css']
 })
 export class ForumComponent implements OnInit {
+  posts;
+  topic: string;
 
-  constructor() { }
+  constructor(private ForumService: ForumService) { }
 
   ngOnInit(): void {
+    this.ForumService.init().subscribe(topic => {
+      this.posts = this.ForumService.data[topic];
+      this.topic = topic;
+    });
   }
-
 }

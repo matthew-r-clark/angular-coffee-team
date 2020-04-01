@@ -1,9 +1,15 @@
-<h1>Forum - fav brew method?</h1>
+<h1>{{topic}}</h1>
 <ul>
-  <li>
-    <h2>Kalita</h2>
-    <h3>Posted by <a>jarambe</a> at 5:33pm 03/29/20</h3>
+  <li *ngFor="let post of posts">
+    <h2>{{post.title}}</h2>
+    <h3>Posted by <a href="#">{{post.author}}</a> at {{post.time}}</h3>
     <div id="line"></div>
-    <p>My favorite method now days is the Kalita. Love how consistent it is.</p>
+    <p>{{post.message}}</p>
+    <ul *ngIf="post.replies">
+      <li class="reply" *ngFor="let reply of post.replies">
+        <h3><a href="#">{{reply.author}}</a> - {{reply.time}}</h3>
+        <p>{{reply.message}}</p>
+      </li>
+    </ul>
   </li>
 </ul>
