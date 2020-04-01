@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
+import { ForumPost } from './forum-post';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,7 @@ export class ForumService {
     'what does everyone think of James Hoffman?': [],
   };
   public currentTopic = new BehaviorSubject<string>('General');
-  public posts;
+  public posts: ForumPost[];
 
   constructor() {}
 
