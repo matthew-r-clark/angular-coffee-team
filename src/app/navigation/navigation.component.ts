@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
+  selected: string;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public setSelected(page:string): void {
+    this.selected = page;
+    console.log('selected: ' + this.selected);
+  }
 }

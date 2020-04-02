@@ -1,9 +1,18 @@
 <nav id="nav-bar">
-  <a href="/"><img id="logo" src="https://i.imgur.com/kdWNxYO.png"></a>
+  <a href="/"><img id="logo" (click)="setSelected('home')" src="https://i.imgur.com/kdWNxYO.png"></a>
   <ul class="nav-menu">
-    <li><button routerLink="/about" class="nav-button">About</button></li>
-    <li><button routerLink="/charts" class="nav-button">Charts</button></li>
-    <li><button routerLink="/community" class="nav-button">Community</button></li>
+    <li>
+      <button routerLink="/about" [ngClass]="{'nav-selected': selected==='about'}"
+      (click)="setSelected('about')" class="nav-button">About</button>
+    </li>
+    <li>
+      <button routerLink="/charts" [ngClass]="{'nav-selected': selected==='charts'}"
+      (click)="setSelected('charts')" class="nav-button">Charts</button>
+    </li>
+    <li>
+      <button routerLink="/community" [ngClass]="{'nav-selected': selected==='community'}"
+      (click)="setSelected('community')" class="nav-button">Community</button>
+    </li>
     <!-- <% if logged_in? %>
       <li>
         <a href="/logout" class="signin">Logout</a>

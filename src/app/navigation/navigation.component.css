@@ -38,7 +38,7 @@ a {
   margin: 0 5px;
 }
 
-.nav-button:hover {
+.nav-button:hover, .nav-selected {
   background-color: #fff;
   color: #0c71b9;
 }
