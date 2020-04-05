@@ -5,8 +5,8 @@ module.exports = async function (context, req) {
   let response;
 
   const data = {
-    General: [],
-    Recipes: [],
+    'General': [],
+    'Recipes': [],
     'fav brew method?': [
       { title: 'aeropress', author: 'mattata', time: '6:04pm 03/30/2020', message: 'the most versatile method i know of...', replies: [
         { author: 'jarambe', time: '6:13pm 03/30/2020', message: 'Yeah it really is!'},
