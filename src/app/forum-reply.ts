@@ -1,4 +1,4 @@
-export interface ForumSubPost {
+export interface ForumReply {
   author: string,
   time: string,
   message: string,
