@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+AzureFunctions/node_modules
 
 # profiling files
 chrome-profiler-events*.json
@@ -47,3 +48,4 @@ Thumbs.db
 
 # Config
 .vscode
+AzureFunctions/local.settings.json
