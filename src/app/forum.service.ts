@@ -21,7 +21,7 @@ export class ForumService {
   //   'what does everyone think of James Hoffman?': [],
   // };
 
-  private url: string = "https://coffee-team-forum.azurewebsites.net/api/GetForumPosts";
+  private url: string = "";
   public currentTopic = new BehaviorSubject<string>('General');
   public posts: ForumPost[];
 
