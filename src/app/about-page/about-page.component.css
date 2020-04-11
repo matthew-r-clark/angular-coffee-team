@@ -1,5 +1,6 @@
 #about-banner1 { /* roasted beans */
-  background-image: url("https://i.imgur.com/cnSYpn5.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                    url("https://i.imgur.com/cnSYpn5.jpg");
 }
 
 img {

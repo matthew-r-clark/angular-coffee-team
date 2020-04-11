@@ -62,6 +62,7 @@ p {
   width: 90%;
   margin: auto;
   text-align: left;
+  line-height: normal;
 }
 
 a:hover {
@@ -74,12 +75,18 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-bottom: 25px;
+  height: 94.5vh;
 }
 
 .hero-text {
   color: #fff;
-  padding: 50px;
+  padding: 40vh 50px 0 50px;
+  text-align: left;
+  width: 50%;
+}
+
+.hero-text h1, .hero-text button {
+  margin-left: 45px;
 }
 
 .hero-text h1, .hero-text p {

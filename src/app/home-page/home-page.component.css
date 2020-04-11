@@ -1,11 +1,14 @@
-#index-banner1 { /* heart coffee */
-  background-image: url("https://i.imgur.com/Bq2XJxW.jpg");
+#banner1 { /* heart coffee */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                    url("https://i.imgur.com/Bq2XJxW.jpg");
 }
 
-#index-banner2 { /* raw beans */
-  background-image: url("https://i.imgur.com/kNiGDrB.jpg");
+#banner2 { /* raw beans */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                    url("https://i.imgur.com/kNiGDrB.jpg");
 }
 
-#index-banner3 { /* ground beans */
-  background-image: url("https://i.imgur.com/g4N5lIl.jpg");
+#banner3 { /* ground beans */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                    url("https://i.imgur.com/g4N5lIl.jpg");
 }
