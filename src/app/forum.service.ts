@@ -3,17 +3,14 @@ import { BehaviorSubject } from 'rxjs';
 import { ForumPost } from './forum-post';
 import { HttpClient } from '@angular/common/http';
 
-let apiUrl: string;
-if (isDevMode()) {
-  apiUrl = "http://localhost:8080/api/GetForumPosts";
-} else {
-  apiUrl = "http://express-coffee-team-server.herokuapp.com/api/GetForumPosts";
-}
+let developmentUrl: string = "http://localhost:8080/api/GetForumPosts";
+let productionUrl: string = "http://express-coffee-team-server.herokuapp.com/api/GetForumPosts";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ForumService {  
+export class ForumService {
+  private url: string = isDevMode() ? developmentUrl : productionUrl;
   public currentTopic = new BehaviorSubject<string>('General');
   public posts: ForumPost[];
 
@@ -24,11 +21,11 @@ export class ForumService {
   }
 
   public getPosts(topic: string) {
-    return this.http.get(`${apiUrl}/${encodeURIComponent(topic)}`);
+    return this.http.get(`${this.url}/${encodeURIComponent(topic)}`);
   }
 
   public getAllPosts() {
-    return this.http.get(apiUrl);
+    return this.http.get(this.url);
   }
 
   public changeTopic(topic: string) {
