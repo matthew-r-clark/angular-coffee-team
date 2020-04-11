@@ -4,7 +4,7 @@ import { ForumPost } from './forum-post';
 import { HttpClient } from '@angular/common/http';
 
 let developmentUrl: string = "http://localhost:8080/api/GetForumPosts";
-let productionUrl: string = "http://express-coffee-team-server.herokuapp.com/api/GetForumPosts";
+let productionUrl: string = "https://express-coffee-team-server.herokuapp.com/api/GetForumPosts";
 
 @Injectable({
   providedIn: 'root'
