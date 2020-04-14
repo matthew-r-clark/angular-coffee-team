@@ -7,12 +7,13 @@ import { ForumService } from '../forum.service';
   styleUrls: ['./forum-topics.component.css']
 })
 export class ForumTopicsComponent implements OnInit {
-  topics: string[];
+  topics: any;
 
   constructor(private ForumService: ForumService) { }
 
   ngOnInit(): void {
-    this.ForumService.getAllPosts().subscribe(res => this.topics = Object.keys(res));
+    this.ForumService.getTopics()
+        .subscribe(res => this.topics = res);
   }
 
   changeTopic(topic) {

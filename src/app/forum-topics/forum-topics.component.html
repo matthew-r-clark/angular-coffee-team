@@ -1,5 +1,5 @@
 <h2>Topics</h2>
 <ul>
-  <li *ngFor="let topic of topics"><a (click)="changeTopic(topic)">{{topic}}</a></li>
+  <li *ngFor="let topic of topics"><a (click)="changeTopic(topic.name)">{{topic.name}}</a></li>
 </ul>
 <button class="btn-secondary">New Topic</button>

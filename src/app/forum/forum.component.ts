@@ -14,7 +14,7 @@ export class ForumComponent implements OnInit {
 
   ngOnInit(): void {
     this.ForumService.init().subscribe(topic => {
-      this.ForumService.getPosts(topic).subscribe(res => this.posts = res);
+      this.ForumService.getPostsForTopic(topic).subscribe(res => this.posts = res);
       this.topic = topic;
     });
   }
