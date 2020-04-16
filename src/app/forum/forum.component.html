@@ -1,14 +1,17 @@
-<h1>{{topic}}</h1>
-<ul>
-  <li *ngFor="let post of posts">
-    <h2>{{post.subject}}</h2>
-    <h3>Posted by <a href="#">{{post.username}}</a> at {{post.time_posted}}</h3>
-    <p>{{post.message}}</p>
-    <ul *ngIf="post.replies">
-      <li class="reply" *ngFor="let reply of post.replies">
-        <h3><a href="#">{{reply.username}}</a> - {{reply.time_posted}}</h3>
-        <p>{{reply.message}}</p>
-      </li>
-    </ul>
-  </li>
-</ul>
+<section>
+  <h1>{{topic}}</h1>
+  <ul>
+    <li *ngFor="let post of posts">
+      <h2>{{post.subject}}</h2>
+      <h3><a href="#">{{post.username}}</a> - {{post.time_posted}}</h3>
+      <p>{{post.message}}</p>
+      <ul *ngIf="post.replies">
+        <li class="reply" *ngFor="let reply of post.replies">
+          <h3><a href="#">{{reply.username}}</a> - {{reply.time_posted}}</h3>
+          <p>{{reply.message}}</p>
+        </li>
+      </ul>
+      <button>Reply</button>
+    </li>
+  </ul>
+</section>
