@@ -21,11 +21,15 @@ export class ForumService {
   }
 
   public getPostsForTopic(topic: string) {
-    return this.http.get(`${this.url}/posts/${encodeURIComponent(topic)}`);
+    return this.http.get(`${this.url}/posts/${topic}`);
   }
 
-  public getTopics() {
-    return this.http.get(this.url + '/topics');
+  public getTopic(topic: string) {
+    return this.http.get(`${this.url}/topics/${topic}`)
+  }
+
+  public getAllTopics() {
+    return this.http.get(`${this.url}/topics`);
   }
 
   public changeTopic(topic: string) {

@@ -12,7 +12,7 @@ export class ForumTopicsComponent implements OnInit {
   constructor(private ForumService: ForumService) { }
 
   ngOnInit(): void {
-    this.ForumService.getTopics()
+    this.ForumService.getAllTopics()
         .subscribe(res => this.topics = res);
   }
 
