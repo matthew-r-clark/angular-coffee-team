@@ -1,0 +1,24 @@
+<div class="container">
+  <header>
+    <button>Start a New Thread</button>
+    <h1>Forum</h1>
+    <div id="search">
+      <input type="text"/>
+      <button>Search</button>
+    </div>
+  </header>
+  <div class="topic">
+    <div class="li-head">
+      <h2>{{topic.subject}}</h2>
+      <h3><a href="#">{{topic.username}}</a> - {{topic.time_posted}}</h3>
+    </div>
+    <p>{{topic.content}}</p>
+
+    <ul>
+      <li class="post" *ngFor="let post of posts">
+        <h3><a href="#">{{post.username}}</a> - {{post.time_posted}}</h3>
+        <p>{{post.content}}</p>
+      </li>
+    </ul>
+  </div>
+</div>

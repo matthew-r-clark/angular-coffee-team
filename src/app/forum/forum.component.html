@@ -9,15 +9,22 @@
   </header>
   <section>
     <ul>
-      <a class="topic" *ngFor="let topic of topics" data-id="{{topic.id}}">
-        <li>
+      <li *ngFor="let topic of topics">
+        <a class="topic" [routerLink]="['/community/posts', topic.id]">
           <div class="li-head">
             <h2>{{topic.subject}}</h2>
-            <h3><a href="#">{{topic.username}}</a> - {{topic.time_posted}}</h3>
+            <h3>
+              <span>{{topic.post_count}} comment</span>
+              <span *ngIf="topic.post_count !== '1'">s</span>
+              <span> - </span>
+              <a href="#">{{topic.username}}</a>
+              <span> - </span>
+              <span>{{topic.time_posted}}</span>
+            </h3>
           </div>
           <p>{{topic.content}}</p>
-        </li>
-      </a>
+        </a>
+      </li>
     </ul>
   </section>
 </div>

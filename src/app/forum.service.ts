@@ -16,10 +16,6 @@ export class ForumService {
 
   constructor(private http: HttpClient) {}
 
-  public init(): BehaviorSubject<string> {
-    return this.currentTopic;
-  }
-
   public getPostsForTopic(topic: string) {
     return this.http.get(`${this.url}/posts/${topic}`);
   }
@@ -30,9 +26,5 @@ export class ForumService {
 
   public getAllTopics() {
     return this.http.get(`${this.url}/topics`);
-  }
-
-  public changeTopic(topic: string) {
-    this.currentTopic.next(topic);
   }
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CommunityPageComponent } from './community-page.component';
+import { PostsForTopicComponent } from './posts-for-topic.component';
 
-describe('CommunityPageComponent', () => {
-  let component: CommunityPageComponent;
-  let fixture: ComponentFixture<CommunityPageComponent>;
+describe('PostsForTopicComponent', () => {
+  let component: PostsForTopicComponent;
+  let fixture: ComponentFixture<PostsForTopicComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CommunityPageComponent ]
+      declarations: [ PostsForTopicComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CommunityPageComponent);
+    fixture = TestBed.createComponent(PostsForTopicComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

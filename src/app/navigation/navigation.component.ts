@@ -15,6 +15,5 @@ export class NavigationComponent implements OnInit {
 
   public setSelected(page:string): void {
     this.selected = page;
-    console.log('selected: ' + this.selected);
   }
 }

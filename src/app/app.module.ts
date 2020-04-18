@@ -8,17 +8,16 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ChartsPageComponent } from './charts-page/charts-page.component';
-import { CommunityPageComponent } from './community-page/community-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ForumTopicsComponent } from './forum-topics/forum-topics.component';
 import { ForumComponent } from './forum/forum.component';
+import { PostsForTopicComponent } from './posts-for-topic/posts-for-topic.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'charts', component: ChartsPageComponent },
-  { path: 'community', component: CommunityPageComponent },
-  // { path: 'community/posts/:id', component: PostsForTopic },
+  { path: 'community', component: ForumComponent },
+  { path: 'community/posts/:id', component: PostsForTopicComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
@@ -29,10 +28,9 @@ const appRoutes: Routes = [
     HomePageComponent,
     AboutPageComponent,
     ChartsPageComponent,
-    CommunityPageComponent,
     PageNotFoundComponent,
-    ForumTopicsComponent,
-    ForumComponent
+    ForumComponent,
+    PostsForTopicComponent
   ],
   imports: [
     BrowserModule,
