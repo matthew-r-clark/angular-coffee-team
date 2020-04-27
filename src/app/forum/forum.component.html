@@ -8,7 +8,7 @@
     </div>
   </header>
   <section>
-    <ul>
+    <ul *ngIf="topics; else elseBlock">
       <li *ngFor="let topic of topics">
         <a class="topic" [routerLink]="['/community/posts', topic.id]">
           <div class="li-head">
@@ -26,5 +26,6 @@
         </a>
       </li>
     </ul>
+    <ng-template #elseBlock>Loading posts...</ng-template>
   </section>
 </div>
