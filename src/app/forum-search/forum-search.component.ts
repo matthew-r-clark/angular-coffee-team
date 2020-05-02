@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forum-search.component.css']
 })
 export class ForumSearchComponent implements OnInit {
+  data = 'here is some data';
 
   constructor() { }
 

@@ -9,11 +9,16 @@ import { ForumTopic } from '../forum-topic';
 })
 export class ForumComponent implements OnInit {
   topics: any;
+  searchQuery: string;
 
   constructor(private ForumService: ForumService) { }
 
   ngOnInit(): void {
     this.ForumService.getAllTopics()
         .subscribe(topics => this.topics = topics);
+  }
+
+  keyUp(event: any) {
+    this.searchQuery = event.target.value;
   }
 }

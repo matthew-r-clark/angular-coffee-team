@@ -3,10 +3,15 @@
     <button>Start a New Thread</button>
     <h1>Forum</h1>
     <div id="search">
-      <input type="text"/>
+      <input (keyup)="keyUp($event)" type="text"/>
       <button>Search</button>
     </div>
   </header>
+  <section id="search">
+    <div>{{searchQuery}}</div>
+    <div>{{search.data}}</div>
+    <app-forum-search #search></app-forum-search>
+  </section>
   <section>
     <ul *ngIf="topics; else elseBlock">
       <li *ngFor="let topic of topics">
