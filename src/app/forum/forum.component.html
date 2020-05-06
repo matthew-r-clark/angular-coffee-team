@@ -3,8 +3,7 @@
     <button>Start a New Thread</button>
     <h1>Forum</h1>
     <div id="search-bar">
-      <input (keyup)="searchFieldKeyUp($event)" type="text"/>
-      <button>Search</button>
+      <input (keyup)="searchFieldKeyUp($event)" type="text" placeholder="Search..."/>
     </div>
   </header>
   <section id="search-results" *ngIf="searchQuery">
