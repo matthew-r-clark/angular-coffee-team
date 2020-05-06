@@ -27,4 +27,8 @@ export class ForumService {
   public getAllTopics() {
     return this.http.get(`${this.url}/topics`);
   }
+
+  public getTopicsWithPhrase(phrase: string) {
+    return this.http.get(`${this.url}/search/${phrase}`);
+  }
 }

@@ -10,6 +10,7 @@ import { ForumTopic } from '../forum-topic';
 export class ForumComponent implements OnInit {
   topics: any;
   searchQuery: string;
+  queryResults: any;
 
   constructor(private ForumService: ForumService) { }
 
@@ -18,7 +19,10 @@ export class ForumComponent implements OnInit {
         .subscribe(topics => this.topics = topics);
   }
 
-  keyUp(event: any) {
+  searchFieldKeyUp(event: any) {
     this.searchQuery = event.target.value;
+
+    this.ForumService.getTopicsWithPhrase(this.searchQuery)
+        .subscribe(results => this.queryResults = results);
   }
 }
