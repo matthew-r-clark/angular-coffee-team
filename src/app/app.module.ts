@@ -11,7 +11,6 @@ import { ChartsPageComponent } from './charts-page/charts-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ForumComponent } from './forum/forum.component';
 import { PostsForTopicComponent } from './posts-for-topic/posts-for-topic.component';
-import { ForumSearchComponent } from './forum-search/forum-search.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -31,8 +30,7 @@ const appRoutes: Routes = [
     ChartsPageComponent,
     PageNotFoundComponent,
     ForumComponent,
-    PostsForTopicComponent,
-    ForumSearchComponent
+    PostsForTopicComponent
   ],
   imports: [
     BrowserModule,

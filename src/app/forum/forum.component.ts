@@ -22,7 +22,21 @@ export class ForumComponent implements OnInit {
   searchFieldKeyUp(event: any) {
     this.searchQuery = event.target.value;
 
-    this.ForumService.getTopicsWithPhrase(this.searchQuery)
-        .subscribe(results => this.queryResults = results);
+    if (this.searchQuery) {
+      let self = this;
+      let timeoutId: any;
+  
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+        timeoutId = undefined;
+      }
+  
+      timeoutId = setTimeout(() => {
+        self.ForumService.getTopicsWithPhrase(self.searchQuery)
+            .subscribe(results => self.queryResults = results);
+      }, 500);
+    } else {
+      this.queryResults = undefined;
+    }
   }
 }
